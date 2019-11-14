@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Forgiving html</title>
+</head>
+    <!-- List item without ul/ol/menu are handled as they inside ul -->
+    <div>
+        <li>List item 1</li>
+        <li>List item 2</li>
+    </div>
+
+    <!-- invalid tag name -->
+    <div foo<div> </div>
+
+    <!-- missed tag name -->
+    <div foo="bar" ="baz"> </div>
+
+    <!-- closed div -->
+    <div/><span>Span 1</span><span>Span 2</span>
+</html>

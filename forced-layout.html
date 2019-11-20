@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Forced layout</title>
+    <style>
+        .element {
+            width: 100px;
+            height: 100px;
+            background-color: coral;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .element.element--big {
+            width: 1000px;
+            height: 1000px;
+        }
+    </style>
+</head>
+<body>
+    <button onclick="changeDivClass()">Change div class</button>
+    <div id="div" class="element">DIV</div>
+    <script src="js/forced-layout.js"></script>
+</body>
+</html>

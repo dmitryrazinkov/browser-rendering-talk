@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Layers</title>
+    <style>
+        img {
+            position: relative;
+            animation: pikachu-dance 1s infinite;
+            will-change: transform;
+        }
+
+        @keyframes pikachu-dance {
+            0% {
+                top: 0;
+                //transform: translate3d(0, 0, 0);
+            }
+
+            50% {
+                top: 200px;
+                //transform: translate3d(0, 200px, 0);
+            }
+
+            100% {
+                top: 0;
+                //transform: translate3d(0, 0, 0);
+            }
+        }
+    </style>
+</head>
+<body>
+    <img height="600px" src="assets/pikachu.png">
+    <button onclick="sleep(10000)">Sleep</button>
+
+    <script src="js/sleep.js"></script>
+</body>
+</html>
